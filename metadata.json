@@ -1,0 +1,6 @@
+{
+  "name": "SAFDAR AI",
+  "description": "Your Intelligent AI Assistant - A modern, fast, and secure full-stack AI platform powered by Gemini and OpenAI.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

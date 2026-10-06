@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  code, pre, kbd {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom crisp dark scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
+
+/* Print Layout Optimization (Requirement 33) */
+@media print {
+  @page {
+    margin: 1.5cm;
+  }
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+    font-size: 11pt !important;
+  }
+  aside,
+  header,
+  nav,
+  .no-print,
+  button,
+  form,
+  input,
+  textarea {
+    display: none !important;
+  }
+  .chat-scroll-area {
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+  }
+  /* Ensure assistant and user text prints cleanly */
+  p, pre, code, h1, h2, h3, h4, span {
+    color: #0f172a !important;
+  }
+  pre {
+    border: 1px solid #cbd5e1 !important;
+    background: #f8fafc !important;
+    white-space: pre-wrap !important;
+  }
+}

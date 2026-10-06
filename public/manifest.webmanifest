@@ -1,0 +1,17 @@
+{
+  "name": "SAFDAR AI - Your Intelligent AI Assistant",
+  "short_name": "SAFDAR AI",
+  "description": "Your Intelligent AI Assistant for learning, creating, coding, research, and everyday tasks.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090d16",
+  "theme_color": "#090d16",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
